@@ -8,6 +8,8 @@
     <title>Test</title>
 </head>
 <body>
-hello
+<?php
+echo 'test';
+?>
 </body>
 </html>
