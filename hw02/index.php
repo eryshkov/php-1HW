@@ -13,6 +13,7 @@
     <p></p>
     <div class="container">
         <a href="/hw02/01" class="btn btn-primary">Task 1</a>
+        <a href="/hw02/02" class="btn btn-primary">Task 2</a>
     </div>
 </body>
 </html>
