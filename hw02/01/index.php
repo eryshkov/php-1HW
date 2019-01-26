@@ -13,33 +13,12 @@
     <p></p>
     <div class="container">
         <h1>Task 1</h1>
-        <table class="table table-bordered col-md-2">
-            <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>a && b</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <?php
+        require __DIR__ . '/func.php';
+        echo printTable('&&');
+        echo printTable('||');
+        echo printTable('xor');
+        ?>
     </div>
 </body>
 </html>
