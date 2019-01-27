@@ -1,7 +1,7 @@
-#  BuilderPattern
+#  Home work 2
 
 <div align = "center">
-<img src="/screens/hw02.png" width="70%">   
+<img src="/screens/hw02.png" width="100%">   
 </div>
 
 <p align="center">
