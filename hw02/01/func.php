@@ -21,21 +21,21 @@ function printCells($a, $b, $operation)
     return $outputString;
 }
 
-function printTable($forOperation)
+function printTable($withOperation)
 {
     $outputString = '<table class="table table-bordered col-md-2">
     <tr>
         <th>a</th>
         <th>b</th>
-        <th>a ' . $forOperation . ' b</th>
+        <th>a ' . $withOperation . ' b</th>
     </tr>';
     $a = false;
     $b = false;
 
-    $outputString .= printCells($a, $b, $forOperation);
-    $outputString .= printCells($a, !$b, $forOperation);
-    $outputString .= printCells(!$a, $b, $forOperation);
-    $outputString .= printCells(!$a, !$b, $forOperation);
-    $outputString .= '</table>';
+    $outputString .= printCells($a, $b, $withOperation);
+    $outputString .= printCells($a, !$b, $withOperation);
+    $outputString .= printCells(!$a, $b, $withOperation);
+    $outputString .= printCells(!$a, !$b, $withOperation);
+    $outputString .= '</table>' . PHP_EOL;
     return $outputString;
 }
