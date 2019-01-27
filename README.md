@@ -1,7 +1,14 @@
 #  Home work 2
 
 <div align = "center">
-<img src="/screens/hw02.png" width="100%">   
+<img src="/screens/hw02.png" width="100%">  
+<br>
+<img src="/screens/1.png" width="100%">
+<br>
+<img src="/screens/2.png" width="100%">
+<br>
+<img src="/screens/3.png" width="100%">
+<br>
 </div>
 
 <p align="center">
