@@ -7,7 +7,7 @@
 <br>
 <img src="/screens/2.png" width="50%">
 <br>
-<img src="/screens/3.png" width="30%">
+<img src="/screens/3.png" width="60%">
 <br>
 </div>
 
