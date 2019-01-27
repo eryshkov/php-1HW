@@ -1,5 +1,5 @@
 <?php
-//Функция принимает на вход полное имя русскими буквами.
+//Функция предполагает, что ей передаётся полное имя русскими буквами.
 //Например:
 //Евгений, но не Женя.
 //Александр, но не Саша.
@@ -9,18 +9,16 @@ function getGender($fullName)
     $name = mb_strtolower($fullName, 'UTF-8');
 
     $lastLetter = substr($name, -2);
+    $lastTwoLetters = substr($name, -4);
 //    echo $lastLetter;
 
-    switch (true) {
-        case $lastLetter === 'й':
-            $gender = MALE;
-            break;
-        case $lastLetter === 'р':
-            $gender = MALE;
-            break;
-            case $lastLetter === 'а':
-            $gender = FEMALE;
-            break;
+    if ('р' === $lastLetter || 'т' === $lastLetter || ('й' === $lastLetter && 'ай' !== $lastTwoLetters) || 'н' === $lastLetter || 'л' === $lastLetter) {
+        $gender = MALE;
+        return $gender;
+    }
+
+    if ('а' === $lastLetter || 'ай' === $lastTwoLetters || 'и' === $lastLetter) {
+        $gender = FEMALE;
     }
 
     return $gender;
@@ -33,6 +31,9 @@ assert(MALE === getGender('Евгений'));
 assert(MALE === getGender('Александр'));
 assert(FEMALE === getGender('Инна'));
 assert(FEMALE === getGender('Елена'));
-assert(FEMALE === getGender('Елена'));
+assert(FEMALE === getGender('Гюльчатай'));
+assert(FEMALE === getGender('Мэри'));
+assert(MALE === getGender('Альберт'));
+assert(null === getGender('Зевс'));
 
 
