@@ -1,7 +1,7 @@
 #  BuilderPattern
 
 <div align = "center">
-<img src="/screens/Builder.gif" width="50%">   
+<img src="/screens/hw02.png" width="70%">   
 </div>
 
 <p align="center">
