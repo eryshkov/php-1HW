@@ -22,6 +22,8 @@
 * uses `mb_strtolower` & `substr`
 * uses `assert`
 
+## Credits
+* thanks to **Albert Stepantsev** and to his [awesome school](https://pr-of-it.ru/courses/php-1.html)
 
 ## License
 
