@@ -16,6 +16,8 @@
 <img src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
 
+## Информация для проверяющего
+* код к каждому заданию находится в папке под номером, который соответствуют номеру задания
 
 ## Main functionality
 * uses `require` & `include`
