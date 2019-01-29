@@ -8,14 +8,14 @@ if ($falseTest) {
 } elseif (!$falseTest) {
     echo 'false.php returns FALSE';
 }
-echo '<br><br>';
+?><br><br><?php
 
 //при успешном включении файла include возвращает true,
 //сам текст возвращаемого файла также включается.
 if (include __DIR__ . '/plainText.php') {
     echo '"include" with plain text returns TRUE';
 }
-echo '<br><br>';
+?><br><br><?php
 
 //при успешном включении php-файла include выполняет
 //код в этом файле. Выполнение этого кода можно прервать
@@ -33,7 +33,7 @@ if ($nullTest) {
 } else {
     echo '"include" with php code returns something';
 }
-echo '<br><br>';
+?><br><br><?php
 
 //также можно возращать значение из включаемого файла
 //при помощи оператора return.
@@ -41,5 +41,5 @@ $textTest = include __DIR__ . '/return.php';
 if ($textTest) {
     echo '"include" with php code returns text:';
 }
-echo '<br>' . $textTest;
-echo '<br><br>';
+?><br><?php
+echo $textTest;
