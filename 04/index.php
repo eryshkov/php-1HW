@@ -1,4 +1,6 @@
 <?php
+const MALE = 'male';
+const FEMALE = 'female';
 //Функция предполагает, что ей передаётся полное имя русскими буквами.
 //Например:
 //Евгений, но не Женя.
@@ -23,9 +25,6 @@ function getGender($fullName)
 
     return $gender;
 }
-
-const MALE = 'male';
-const FEMALE = 'female';
 
 assert(MALE === getGender('Евгений'));
 assert(MALE === getGender('Александр'));
