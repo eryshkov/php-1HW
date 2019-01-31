@@ -50,8 +50,6 @@
             <th>a</th>
             <th>b</th>
             <th>a || b</th>
-            <?php $a = false;
-            $b = false; ?>
         </tr>
         <tr>
             <td><?php echo (int)$a; ?></td>
@@ -79,8 +77,6 @@
             <th>a</th>
             <th>b</th>
             <th>a xor b</th>
-            <?php $a = false;
-            $b = false; ?>
         </tr>
         <tr>
             <td><?php echo (int)$a; ?></td>
