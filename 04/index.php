@@ -11,15 +11,13 @@ function getGender($fullName)
     $name = mb_strtolower($fullName, 'UTF-8');
 
     $lastLetter = substr($name, -2);
-    $lastTwoLetters = substr($name, -4);
-//    echo $lastLetter;
 
-    if ('р' === $lastLetter || 'т' === $lastLetter || ('й' === $lastLetter && 'ай' !== $lastTwoLetters) || 'н' === $lastLetter || 'л' === $lastLetter) {
+    if ('р' === $lastLetter || 'т' === $lastLetter || 'й' === $lastLetter  || 'н' === $lastLetter || 'л' === $lastLetter) {
         $gender = MALE;
         return $gender;
     }
 
-    if ('а' === $lastLetter || 'ай' === $lastTwoLetters || 'и' === $lastLetter) {
+    if ('а' === $lastLetter || 'и' === $lastLetter) {
         $gender = FEMALE;
     }
 
