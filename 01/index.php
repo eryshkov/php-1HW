@@ -16,12 +16,93 @@
 <p></p>
 <div class="container">
     <h1>Task 1</h1>
-    <?php
-    require __DIR__ . '/func.php';
-    echo printTable('&&');
-    echo printTable('||');
-    echo printTable('xor');
-    ?>
+    <table class="table table-bordered col-md-2">
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>a && b</th>
+            <?php $a = false;
+            $b = false; ?>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)($a && $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)(!$a && $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)($a && !$b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)(!$a && !$b); ?></td>
+        </tr>
+    </table>
+    <table class="table table-bordered col-md-2">
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>a || b</th>
+            <?php $a = false;
+            $b = false; ?>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)($a || $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)(!$a || $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)($a || !$b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)(!$a || !$b); ?></td>
+        </tr>
+    </table>
+    <table class="table table-bordered col-md-2">
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>a xor b</th>
+            <?php $a = false;
+            $b = false; ?>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)($a xor $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)$b; ?></td>
+            <td><?php echo (int)(!$a xor $b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)($a xor !$b); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo (int)!$a; ?></td>
+            <td><?php echo (int)!$b; ?></td>
+            <td><?php echo (int)(!$a xor !$b); ?></td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
