@@ -1,5 +1,3 @@
-<?php $a = false;
-$b = false; ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -20,83 +18,53 @@ $b = false; ?>
     <h1>Task 1</h1>
     <table class="table table-bordered col-md-2">
         <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>a && b</th>
+            <th>&&</th>
+            <th><?php echo (int)false;?></th>
+            <th><?php echo (int)true;?></th>
         </tr>
         <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)($a && $b); ?></td>
+            <th><?php echo (int)false;?></th>
+            <td><?php echo (int)(false && false);?></td>
+            <td><?php echo (int)(true && false);?></td>
         </tr>
         <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)(!$a && $b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)($a && !$b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)(!$a && !$b); ?></td>
+            <th><?php echo (int)true;?></th>
+            <td><?php echo (int)(true && false);?></td>
+            <td><?php echo (int)(true && true);?></td>
         </tr>
     </table>
     <table class="table table-bordered col-md-2">
         <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>a || b</th>
+            <th>||</th>
+            <th><?php echo (int)false;?></th>
+            <th><?php echo (int)true;?></th>
         </tr>
         <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)($a || $b); ?></td>
+            <th><?php echo (int)false;?></th>
+            <td><?php echo (int)(false || false);?></td>
+            <td><?php echo (int)(true || false);?></td>
         </tr>
         <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)(!$a || $b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)($a || !$b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)(!$a || !$b); ?></td>
+            <th><?php echo (int)true;?></th>
+            <td><?php echo (int)(true || false);?></td>
+            <td><?php echo (int)(true || true);?></td>
         </tr>
     </table>
     <table class="table table-bordered col-md-2">
         <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>a xor b</th>
+            <th>xor</th>
+            <th><?php echo (int)false;?></th>
+            <th><?php echo (int)true;?></th>
         </tr>
         <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)($a xor $b); ?></td>
+            <th><?php echo (int)false;?></th>
+            <td><?php echo (int)(false xor false);?></td>
+            <td><?php echo (int)(true xor false);?></td>
         </tr>
         <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)$b; ?></td>
-            <td><?php echo (int)(!$a xor $b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)($a xor !$b); ?></td>
-        </tr>
-        <tr>
-            <td><?php echo (int)!$a; ?></td>
-            <td><?php echo (int)!$b; ?></td>
-            <td><?php echo (int)(!$a xor !$b); ?></td>
+            <th><?php echo (int)true;?></th>
+            <td><?php echo (int)(true xor false);?></td>
+            <td><?php echo (int)(true xor true);?></td>
         </tr>
     </table>
 </div>
