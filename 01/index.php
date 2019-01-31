@@ -1,3 +1,5 @@
+<?php $a = false;
+$b = false; ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -21,8 +23,6 @@
             <th>a</th>
             <th>b</th>
             <th>a && b</th>
-            <?php $a = false;
-            $b = false; ?>
         </tr>
         <tr>
             <td><?php echo (int)$a; ?></td>
